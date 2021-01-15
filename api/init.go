@@ -10,5 +10,6 @@ import (
 func Init() {
 	router := mux.NewRouter()
 	router.HandleFunc("/", indexHandler)
+	router.HandleFunc("/collect", collectorHandler)
 	http.ListenAndServe(":4000", router)
 }

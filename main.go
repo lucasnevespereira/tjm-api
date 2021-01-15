@@ -1,9 +1,9 @@
 package main
 
 import (
-	"tjm-api/collector"
+	"tjm-api/api"
 )
 
 func main() {
-	collector.Start()
+	api.Init()
 }
